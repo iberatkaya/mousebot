@@ -1,13 +1,13 @@
 {
   "name": "mousebot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "lib/index.js",
   "author": "iberatkaya",
   "license": "MIT",
   "dependencies": {
     "neon-cli": "^0.3.3",
-    "node-pre-gyp": "github:amilajack/node-pre-gyp",
+    "node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "node-pre-gyp-github": "^1.4.3"
   },
   "devDependencies": {
@@ -32,6 +32,7 @@
     "Control Keyboard"
   ],
   "scripts": {
+    "build": "tsc",
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "package": "node-pre-gyp package",
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
@@ -39,7 +40,7 @@
     "prepare": "npm run build"
   },
   "binary": {
-    "module_name": "mousebot",
+    "module_name": "index",
     "host": "https://github.com/iberatkaya/mousebot/releases/download/",
     "remote_path": "{version}",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",

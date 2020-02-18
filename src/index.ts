@@ -184,10 +184,3 @@ export class Bot {
         })
     }
 }
-
-let run = async () => {
-    let bot = new Bot();
-    await bot.mouseScroll("y", 1);
-}
-
-run();  
