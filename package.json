@@ -1,17 +1,49 @@
 {
-  "name": "computerbot",
+  "name": "mousebot",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
-  "author": "berat <beratkaya1998@gmail.com>",
+  "author": "iberatkaya",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^13.7.1",
     "neon-cli": "^0.3.3",
+    "node-pre-gyp": "github:amilajack/node-pre-gyp",
+    "node-pre-gyp-github": "^1.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.1",
     "typescript": "^3.7.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iberatkaya/mousebot.git"
+  },
+  "files": [
+    "native/index.node",
+    "lib"
+  ],
+  "keywords": [
+    "Mouse",
+    "Automation",
+    "Keyboard",
+    "Bot",
+    "Control",
+    "Control Mouse",
+    "Control Keyboard"
+  ],
   "scripts": {
-    "install": "neon build",
-    "pretty": "prettier --write \"lib/**/*.{tsx,ts}\""
+    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "package": "node-pre-gyp package",
+    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
+    "pretty": "prettier --write \"lib/**/*.{tsx,ts}\"",
+    "prepare": "npm run build"
+  },
+  "binary": {
+    "module_name": "mousebot",
+    "host": "https://github.com/iberatkaya/mousebot/releases/download/",
+    "remote_path": "{version}",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "module_path": "./native",
+    "pkg_path": "."
   }
 }
