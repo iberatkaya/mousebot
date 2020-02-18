@@ -115,8 +115,8 @@ fn key_write_smooth(mut cx: FunctionContext) -> JsResult<JsUndefined> {
 }
 
 register_module!(mut cx, {
-    cx.export_function("moveMouse", move_mouse).unwrap();
-    cx.export_function("moveMouseSmooth", move_mouse_smooth).unwrap();
+    cx.export_function("mouseMove", move_mouse).unwrap();
+    cx.export_function("mouseMoveSmooth", move_mouse_smooth).unwrap();
     cx.export_function("mouseClick", mouse_click).unwrap();
     cx.export_function("keyWrite", key_write).unwrap();
     cx.export_function("keyWriteSmooth", key_write_smooth).unwrap();

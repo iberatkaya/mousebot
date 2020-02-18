@@ -11,6 +11,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "install": "neon build"
+    "install": "neon build",
+    "pretty": "prettier --write \"lib/**/*.{tsx,ts}\""
   }
 }
