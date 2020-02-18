@@ -1,0 +1,18 @@
+[package]
+name = "computerbot"
+version = "0.0.1"
+authors = ["berat <beratkaya1998@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "computerbot"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+
+[dependencies]
+neon = "0.3.3"
+enigo = "0.0.13"

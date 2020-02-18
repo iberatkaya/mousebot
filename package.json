@@ -1,0 +1,16 @@
+{
+  "name": "computerbot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "berat <beratkaya1998@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^13.7.1",
+    "neon-cli": "^0.3.3",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
