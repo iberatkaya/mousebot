@@ -12,8 +12,8 @@ MouseBot is an automating package that lets you programatically control the mous
 
 Please make sure you have installed the global dependencies:
 
-  * Python v2.7 is recommended, although Python v3.5, v3.6, or v3.7 may work.
-
+* Python v2.7 is recommended, although Python v3.5, v3.6, or v3.7 may work.
+* npm i -g node-pre-gyp
 
 ## Install
 
@@ -27,7 +27,8 @@ import { Bot } from 'mousebot';
 const { Bot } = require('mousebot');
 
 /**
- * Create an instance of the class.
+ * Create an instance of the class. 
+ * Each member function of the class is an async funcction that returns a promise.
  */
 
 let bot = new Bot();
@@ -39,7 +40,7 @@ bot.mouseMove(400, 500);
 bot.mouseMoveSmooth(300, 300, 600, 500);
 
 //Type "Hello World!"
- bot.keyWrite("Hello world!")
+bot.keyWrite("Hello world!")
 
 //Chain the alt and f5 keys to perform an ALT+F5 to refresh a page.
 bot.keyChain("alt", "f5");
@@ -47,8 +48,18 @@ bot.keyChain("alt", "f5");
 //Directly use some implemented shortcuts.
 bot.shortcuts.altTab();
 
+//Chain functions using an async function.
+let chain = async () => {
+    await bot.mouseMoveSmooth(300, 300, 600, 500);
+    await bot.keyWrite("Hello world!")
+}
+chain();
 
 ```
+
+## Known Issues
+
+Currently all of the features work on Windows and Linux. On MacOS some mouse features work while most keyboard features do not work.
 
 ## Author
 
