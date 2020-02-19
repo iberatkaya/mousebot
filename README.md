@@ -28,7 +28,7 @@ const { Bot } = require('mousebot');
 
 /**
  * Create an instance of the class. 
- * Each member function of the class is an async funcction that returns a promise.
+ * Each member function of the class is an async function that returns a promise.
  */
 
 let bot = new Bot();
