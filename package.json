@@ -1,14 +1,13 @@
 {
   "name": "mousebot",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.4",
+  "description": "A computer automating package that can control the mouse and keyboard.",
   "main": "lib/index.js",
   "author": "iberatkaya",
   "license": "MIT",
   "dependencies": {
     "neon-cli": "^0.3.3",
-    "node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
-    "node-pre-gyp-github": "^1.4.3"
+    "node-pre-gyp": "github:amilajack/node-pre-gyp"
   },
   "devDependencies": {
     "@types/node": "^13.7.1",
@@ -36,7 +35,7 @@
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "package": "node-pre-gyp package",
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
-    "pretty": "prettier --write \"lib/**/*.{tsx,ts}\"",
+    "pretty": "prettier --write \"src/**/*.{tsx,ts}\"",
     "prepare": "npm run build"
   },
   "binary": {
