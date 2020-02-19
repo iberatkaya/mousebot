@@ -70,7 +70,6 @@ export class Bot {
         });
     };
 
-
     /**
      * @param {string} str The string to write
      * Write the given string to the keyboard without delay.
@@ -144,7 +143,7 @@ export class Bot {
 
     /**
      * @param {number} [delay = 100] The delay of the tab key being pressed
-     * Perform ALT+TAB by pressing the tab button after the delay has occurred. The delay is required since the buttons are not pressed instantaneously. The delay might be required to higher for different machines. 
+     * Perform ALT+TAB by pressing the tab button after the delay has occurred. The delay is required since the buttons are not pressed instantaneously. The delay might be required to higher for different machines.
      */
 
     altTab = async (delay = 100) => {
@@ -156,16 +155,16 @@ export class Bot {
                     await bot.keyClick("tab");
                     await bot.keyUp("alt");
                     resolve(true);
-                }, delay)
+                }, delay);
             } catch (e) {
                 reject(e);
             }
-        })
-    }
+        });
+    };
 
     /**
      * @param {number} [delay = 100] The delay of the f4 key being pressed
-     * Perform ALT+F4 by pressing the f4 button after the delay has occurred. The delay is required since the buttons are not pressed instantaneously. The delay might be required to higher for different machines. 
+     * Perform ALT+F4 by pressing the f4 button after the delay has occurred. The delay is required since the buttons are not pressed instantaneously. The delay might be required to higher for different machines.
      */
 
     altF4 = async (delay = 100) => {
@@ -177,10 +176,10 @@ export class Bot {
                     await bot.keyClick("f4");
                     await bot.keyUp("alt");
                     resolve(true);
-                }, delay)
+                }, delay);
             } catch (e) {
                 reject(e);
             }
-        })
-    }
+        });
+    };
 }

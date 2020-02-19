@@ -107,9 +107,9 @@ fn mouse_scroll(mut cx: FunctionContext) -> JsResult<JsUndefined> {
 }
 
 fn key_write(mut cx: FunctionContext) -> JsResult<JsUndefined> {
-    let str = cx.argument::<JsString>(0)?.value();
+    let mystr = cx.argument::<JsString>(0)?.value();
     let mut con = Enigo::new();
-    con.key_sequence(&str);
+    con.key_sequence(&mystr);
     let f = cx.argument::<JsFunction>(1)?;
     let task = BackgroundTask { status: true };
     task.schedule(f);
@@ -117,13 +117,13 @@ fn key_write(mut cx: FunctionContext) -> JsResult<JsUndefined> {
 }
 
 fn key_write_smooth(mut cx: FunctionContext) -> JsResult<JsUndefined> {
-    let str = cx.argument::<JsString>(0)?.value();
+    let mystr = cx.argument::<JsString>(0)?.value();
     let delay = match cx.argument_opt(1) {
         Some(arg) => arg.downcast::<JsNumber>().or_throw(&mut cx)?.value() as u64,
         None => 100
     };
     let mut con = Enigo::new();
-    for i in str.chars() {
+    for i in mystr.chars() {
         con.key_sequence(&i.to_string());
         std::thread::sleep(std::time::Duration::from_millis(delay as u64));
     }
@@ -134,9 +134,9 @@ fn key_write_smooth(mut cx: FunctionContext) -> JsResult<JsUndefined> {
 }
 
 fn key_down(mut cx: FunctionContext) -> JsResult<JsUndefined> {
-    let str = cx.argument::<JsString>(0)?.value();
+    let mystr = cx.argument::<JsString>(0)?.value();
     let mut con = Enigo::new();
-    match str.as_str() {
+    match mystr.as_str() {
         "alt" => con.key_down(Key::Alt),
         "shift" => con.key_down(Key::Shift),
         "backspace" => con.key_down(Key::Backspace),
@@ -152,7 +152,7 @@ fn key_down(mut cx: FunctionContext) -> JsResult<JsUndefined> {
         "downarrow" => con.key_down(Key::DownArrow),
         "esc" => con.key_down(Key::Escape),
         "return" => con.key_down(Key::Return),
-        _ => panic!("{} is not a valid key!", str)
+        _ => panic!("{} is not a valid key!", mystr)
     };
     let f = cx.argument::<JsFunction>(1)?;
     let task = BackgroundTask { status: true };
@@ -161,9 +161,9 @@ fn key_down(mut cx: FunctionContext) -> JsResult<JsUndefined> {
 }
 
 fn key_up(mut cx: FunctionContext) -> JsResult<JsUndefined> {
-    let str = cx.argument::<JsString>(0)?.value();
+    let mystr = cx.argument::<JsString>(0)?.value();
     let mut con = Enigo::new();
-    match str.as_str() {
+    match mystr.as_str() {
                 "alt" => con.key_up(Key::Alt),
                 "shift" => con.key_up(Key::Shift),
                 "backspace" => con.key_up(Key::Backspace),
@@ -179,7 +179,7 @@ fn key_up(mut cx: FunctionContext) -> JsResult<JsUndefined> {
                 "downarrow" => con.key_up(Key::DownArrow),
                 "esc" => con.key_up(Key::Escape),
                 "return" => con.key_up(Key::Return),
-        _ => panic!("{} is not a valid key!", str)
+        _ => panic!("{} is not a valid key!", mystr)
     };
     let f = cx.argument::<JsFunction>(1)?;
     let task = BackgroundTask { status: true };
@@ -188,9 +188,9 @@ fn key_up(mut cx: FunctionContext) -> JsResult<JsUndefined> {
 }
 
 fn key_click(mut cx: FunctionContext) -> JsResult<JsUndefined> {
-    let str = cx.argument::<JsString>(0)?.value();
+    let mystr = cx.argument::<JsString>(0)?.value();
     let mut con = Enigo::new();
-    match str.as_str() {
+    match mystr.as_str() {
         "alt" => con.key_click(Key::Alt),
         "shift" => con.key_click(Key::Shift),
         "backspace" => con.key_click(Key::Backspace),
@@ -206,7 +206,7 @@ fn key_click(mut cx: FunctionContext) -> JsResult<JsUndefined> {
         "downarrow" => con.key_click(Key::DownArrow),
         "esc" => con.key_click(Key::Escape),
         "return" => con.key_click(Key::Return),
-        _ => panic!("{} is not a valid key!", str)
+        _ => panic!("{} is not a valid key!", mystr)
     };
     let f = cx.argument::<JsFunction>(1)?;
     let task = BackgroundTask { status: true };
