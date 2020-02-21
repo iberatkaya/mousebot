@@ -34,24 +34,24 @@ const { Bot } = require('mousebot');
 let bot = new Bot();
 
 //Move the mouse to the coordinates x=400, y=500. 
-bot.mouseMove(400, 500);
+bot.mouse.move(400, 500);
 
 //Move the mouse from x=300, y=400 to x=600, y=500 smoothly.
-bot.mouseMoveSmooth(300, 300, 600, 500);
+bot.mouse.moveSmooth(300, 300, 600, 500);
 
 //Type "Hello World!"
-bot.keyWrite("Hello world!")
+bot.keyboard.write("Hello world!")
 
 //Chain the alt and f5 keys to perform an ALT+F5 to refresh a page.
-bot.keyChain("alt", "f5");
+bot.keyboard.keyChain("alt", "f5");
 
 //Directly use some implemented shortcuts.
 bot.shortcuts.altTab();
 
 //Chain functions using an async function.
 let chain = async () => {
-    await bot.mouseMoveSmooth(300, 300, 600, 500);
-    await bot.keyWrite("Hello world!")
+    await bot.mouse.moveSmooth(300, 300, 600, 500);
+    await bot.keyboard.write("Hello world!")
 }
 chain();
 
