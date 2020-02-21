@@ -82,384 +82,399 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#keychain" class="tsd-kind-icon">key<wbr>Chain</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#keyclick" class="tsd-kind-icon">key<wbr>Click</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#keydown" class="tsd-kind-icon">key<wbr>Down</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#keyup" class="tsd-kind-icon">key<wbr>Up</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#keywrite" class="tsd-kind-icon">key<wbr>Write</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#keywritesmooth" class="tsd-kind-icon">key<wbr>Write<wbr>Smooth</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#mouseclick" class="tsd-kind-icon">mouse<wbr>Click</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#mousemove" class="tsd-kind-icon">mouse<wbr>Move</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#mousemovesmooth" class="tsd-kind-icon">mouse<wbr>Move<wbr>Smooth</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.bot.html#mousescroll" class="tsd-kind-icon">mouse<wbr>Scroll</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="_index_.bot.html#keyboard" class="tsd-kind-icon">keyboard</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="_index_.bot.html#mouse" class="tsd-kind-icon">mouse</a></li>
 								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="_index_.bot.html#shortcuts" class="tsd-kind-icon">shortcuts</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="_index_.bot.html#keys" class="tsd-kind-icon">keys</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="keychain" class="tsd-anchor"></a>
-					<h3>key<wbr>Chain</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Chain<span class="tsd-signature-symbol">(</span>key1<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a>, key2<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a>, delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L147">index.ts:147</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key1: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The lowercase string of the first key desired to be hold.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>key2: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The lowercase string of the second key desired to be pressed once.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="keyclick" class="tsd-anchor"></a>
-					<h3>key<wbr>Click</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Click<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L131">index.ts:131</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The lowercase string of the key desired to be hold pressed once.
-											Press a key once.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="keydown" class="tsd-anchor"></a>
-					<h3>key<wbr>Down</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Down<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L103">index.ts:103</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The lowercase string of the key desired to be hold pressed.
-											Hold a key pressed. Stop the key from being press using the keyUp function.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="keyup" class="tsd-anchor"></a>
-					<h3>key<wbr>Up</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Up<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L117">index.ts:117</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The lowercase string of the key desired to be hold released.
-											Release a pressed key.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="keywrite" class="tsd-anchor"></a>
-					<h3>key<wbr>Write</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Write<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L74">index.ts:74</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The string to write.
-											Write the given string to the keyboard without delay.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="keywritesmooth" class="tsd-anchor"></a>
-					<h3>key<wbr>Write<wbr>Smooth</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Write<wbr>Smooth<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L89">index.ts:89</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The string to write smoothly.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mouseclick" class="tsd-anchor"></a>
-					<h3>mouse<wbr>Click</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Click<span class="tsd-signature-symbol">(</span>button<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"right"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L46">index.ts:46</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>button: <span class="tsd-signature-type">"left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"right"</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Perform a left or right button click.
-											Click the mouse in the given direction.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mousemove" class="tsd-anchor"></a>
-					<h3>mouse<wbr>Move</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Move<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L14">index.ts:14</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>x: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The x coordinate of the mouse.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>y: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The y coordinate of the mouse.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Move the mouse to the given coordinates immediatly.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mousemovesmooth" class="tsd-anchor"></a>
-					<h3>mouse<wbr>Move<wbr>Smooth</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Move<wbr>Smooth<span class="tsd-signature-symbol">(</span>startx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, starty<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L32">index.ts:32</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>startx: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The beginning x coordinate of the mouse.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>starty: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The beginning y coordinate of the mouse.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>endx: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ending x coordinate of the mouse.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>endy: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ending y coordinate of the mouse.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mousescroll" class="tsd-anchor"></a>
-					<h3>mouse<wbr>Scroll</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Scroll<span class="tsd-signature-symbol">(</span>direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"x"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"y"</span>, amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L60">index.ts:60</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>direction: <span class="tsd-signature-type">"x"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"y"</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Perform a scroll horizontal (x) or vertical (y).</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>amount: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The amount of the scroll.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="keyboard" class="tsd-anchor"></a>
+					<h3>keyboard</h3>
+					<div class="tsd-signature tsd-kind-icon">keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L103">index.ts:103</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Contains all of the keyboard functions.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="keyboard.keychain" class="tsd-anchor"></a>
+						<h3>key<wbr>Chain</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">key<wbr>Chain<span class="tsd-signature-symbol">(</span>key1<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a>, key2<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a>, delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L182">index.ts:182</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>key1: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The lowercase string of the first key desired to be hold.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5>key2: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The lowercase string of the second key desired to be pressed once.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 200</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="keyboard.keyclick" class="tsd-anchor"></a>
+						<h3>key<wbr>Click</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">key<wbr>Click<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L166">index.ts:166</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>key: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The lowercase string of the key desired to be hold pressed once.
+												Press a key once.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="keyboard.keydown" class="tsd-anchor"></a>
+						<h3>key<wbr>Down</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">key<wbr>Down<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L138">index.ts:138</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>key: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The lowercase string of the key desired to be hold pressed.
+												Hold a key pressed. Stop the key from being press using the keyUp function.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="keyboard.keyup" class="tsd-anchor"></a>
+						<h3>key<wbr>Up</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">key<wbr>Up<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L152">index.ts:152</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>key: <a href="../modules/_index_.html#key" class="tsd-signature-type">Key</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The lowercase string of the key desired to be hold released.
+												Release a pressed key.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="keyboard.write" class="tsd-anchor"></a>
+						<h3>write</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L109">index.ts:109</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>str: <span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The string to write.
+												Write the given string to the keyboard without delay.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="keyboard.writesmooth" class="tsd-anchor"></a>
+						<h3>write<wbr>Smooth</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">write<wbr>Smooth<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L124">index.ts:124</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>str: <span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The string to write smoothly.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 200</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="mouse" class="tsd-anchor"></a>
+					<h3>mouse</h3>
+					<div class="tsd-signature tsd-kind-icon">mouse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L35">index.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Contains all the mouse functions.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="mouse.click" class="tsd-anchor"></a>
+						<h3>click</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">(</span>button<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"right"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L75">index.ts:75</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>button: <span class="tsd-signature-type">"left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"right"</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Perform a left or right button click.
+												Click the mouse in the given direction.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="mouse.move" class="tsd-anchor"></a>
+						<h3>move</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">move<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L43">index.ts:43</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>x: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The x coordinate of the mouse.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5>y: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The y coordinate of the mouse.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								<p>Move the mouse to the given coordinates immediatly.</p>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="mouse.movesmooth" class="tsd-anchor"></a>
+						<h3>move<wbr>Smooth</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">move<wbr>Smooth<span class="tsd-signature-symbol">(</span>startx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, starty<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, delay<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L61">index.ts:61</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>startx: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The beginning x coordinate of the mouse.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5>starty: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The beginning y coordinate of the mouse.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5>endx: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The ending x coordinate of the mouse.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5>endy: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The ending y coordinate of the mouse.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="mouse.scroll" class="tsd-anchor"></a>
+						<h3>scroll</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">scroll<span class="tsd-signature-symbol">(</span>direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"x"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"y"</span>, amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L89">index.ts:89</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>direction: <span class="tsd-signature-type">"x"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"y"</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Perform a scroll horizontal (x) or vertical (y).</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h5>amount: <span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The amount of the scroll.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</li>
+						</ul>
+					</section>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
 					<a name="shortcuts" class="tsd-anchor"></a>
 					<h3>shortcuts</h3>
 					<div class="tsd-signature tsd-kind-icon">shortcuts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L167">index.ts:167</a></li>
+							<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L203">index.ts:203</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -477,13 +492,13 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L180">index.ts:180</a></li>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L216">index.ts:216</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
 								<ul class="tsd-parameters">
 									<li>
-										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></h5>
+										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 200</span></h5>
 									</li>
 								</ul>
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -500,13 +515,13 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L187">index.ts:187</a></li>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L223">index.ts:223</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
 								<ul class="tsd-parameters">
 									<li>
-										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></h5>
+										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 200</span></h5>
 									</li>
 								</ul>
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -523,18 +538,193 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/997785d/src/index.ts#L173">index.ts:173</a></li>
+										<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L209">index.ts:209</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
 								<ul class="tsd-parameters">
 									<li>
-										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></h5>
+										<h5><span class="tsd-flag ts-flagDefault value">Default value</span> delay: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 200</span></h5>
 									</li>
 								</ul>
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							</li>
 						</ul>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+					<a name="keys" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> keys</h3>
+					<div class="tsd-signature tsd-kind-icon">keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L11">index.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Containes keys to be used in key presses.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.alt" class="tsd-anchor"></a>
+						<h3>ALT</h3>
+						<div class="tsd-signature tsd-kind-icon">ALT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;alt&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L12">index.ts:12</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.backspace" class="tsd-anchor"></a>
+						<h3>BACKSPACE</h3>
+						<div class="tsd-signature tsd-kind-icon">BACKSPACE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;backspace&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L14">index.ts:14</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.capslock" class="tsd-anchor"></a>
+						<h3>CAPSLOCK</h3>
+						<div class="tsd-signature tsd-kind-icon">CAPSLOCK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;capslock&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L15">index.ts:15</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.enter" class="tsd-anchor"></a>
+						<h3>ENTER</h3>
+						<div class="tsd-signature tsd-kind-icon">ENTER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;return&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L28">index.ts:28</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.escape" class="tsd-anchor"></a>
+						<h3>ESCAPE</h3>
+						<div class="tsd-signature tsd-kind-icon">ESCAPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;escape&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L17">index.ts:17</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.f4" class="tsd-anchor"></a>
+						<h3>F4</h3>
+						<div class="tsd-signature tsd-kind-icon">F4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;f4&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L19">index.ts:19</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.f5" class="tsd-anchor"></a>
+						<h3>F5</h3>
+						<div class="tsd-signature tsd-kind-icon">F5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;f5&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L20">index.ts:20</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.return" class="tsd-anchor"></a>
+						<h3>RETURN</h3>
+						<div class="tsd-signature tsd-kind-icon">RETURN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;return&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L27">index.ts:27</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.shift" class="tsd-anchor"></a>
+						<h3>SHIFT</h3>
+						<div class="tsd-signature tsd-kind-icon">SHIFT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;shift&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L13">index.ts:13</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.space" class="tsd-anchor"></a>
+						<h3>SPACE</h3>
+						<div class="tsd-signature tsd-kind-icon">SPACE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;space&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L16">index.ts:16</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="keys.tab" class="tsd-anchor"></a>
+						<h3>TAB</h3>
+						<div class="tsd-signature tsd-kind-icon">TAB<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;tab&quot; as Key</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L18">index.ts:18</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="keys.arrow" class="tsd-anchor"></a>
+						<h3>ARROW</h3>
+						<div class="tsd-signature tsd-kind-icon">ARROW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L21">index.ts:21</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="keys.arrow.down" class="tsd-anchor"></a>
+							<h3>DOWN</h3>
+							<div class="tsd-signature tsd-kind-icon">DOWN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;downarrow as Key&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L25">index.ts:25</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="keys.arrow.left" class="tsd-anchor"></a>
+							<h3>LEFT</h3>
+							<div class="tsd-signature tsd-kind-icon">LEFT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;leftarrow&quot; as Key</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L23">index.ts:23</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="keys.arrow.right" class="tsd-anchor"></a>
+							<h3>RIGHT</h3>
+							<div class="tsd-signature tsd-kind-icon">RIGHT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;rightarrow&quot; as Key</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L22">index.ts:22</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="keys.arrow.up" class="tsd-anchor"></a>
+							<h3>UP</h3>
+							<div class="tsd-signature tsd-kind-icon">UP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"alt"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"shift"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"backspace"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capslock"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"space"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"escape"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f4"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f5"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rightarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leftarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"uparrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"downarrow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"esc"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"return"</span><span class="tsd-signature-symbol"> = &quot;uparrow&quot; as Key</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/iberatkaya/mousebot/blob/3e3c4c7/src/index.ts#L24">index.ts:24</a></li>
+								</ul>
+							</aside>
+						</section>
 					</section>
 				</section>
 			</section>
@@ -557,38 +747,17 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_index_.bot.html" class="tsd-kind-icon">Bot</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#keychain" class="tsd-kind-icon">key<wbr>Chain</a>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="_index_.bot.html#keyboard" class="tsd-kind-icon">keyboard</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#keyclick" class="tsd-kind-icon">key<wbr>Click</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#keydown" class="tsd-kind-icon">key<wbr>Down</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#keyup" class="tsd-kind-icon">key<wbr>Up</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#keywrite" class="tsd-kind-icon">key<wbr>Write</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#keywritesmooth" class="tsd-kind-icon">key<wbr>Write<wbr>Smooth</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#mouseclick" class="tsd-kind-icon">mouse<wbr>Click</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#mousemove" class="tsd-kind-icon">mouse<wbr>Move</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#mousemovesmooth" class="tsd-kind-icon">mouse<wbr>Move<wbr>Smooth</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_index_.bot.html#mousescroll" class="tsd-kind-icon">mouse<wbr>Scroll</a>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="_index_.bot.html#mouse" class="tsd-kind-icon">mouse</a>
 							</li>
 							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
 								<a href="_index_.bot.html#shortcuts" class="tsd-kind-icon">shortcuts</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+								<a href="_index_.bot.html#keys" class="tsd-kind-icon">keys</a>
 							</li>
 						</ul>
 					</li>

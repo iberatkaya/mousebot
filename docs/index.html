@@ -70,7 +70,15 @@
 				<p align="center"><img src="https://raw.githubusercontent.com/iberatkaya/mousebot/master/logo/logo.png"></p>
 				<p>Computer automating package that can control the mouse and keyboard.</p>
 				<p><a href="https://nodei.co/npm/mousebot/"><img src="https://nodei.co/npm/mousebot.png" alt="NPM"></a></p>
-				<p>MouseBot is an automating package that lets you programatically control the mouse and keyboard of your device. Check out the <a href="https://iberatkaya.github.io/mousebot/">API documentation</a>!</p>
+				<p>MouseBot is an automating package that lets you programatically control the mouse and keyboard of your device. MouseBot was built with native Rust bindings using <a href="https://neon-bindings.com/">neon</a>. Check out the <a href="https://iberatkaya.github.io/mousebot/">API documentation</a>!</p>
+				<a href="#building" id="building" style="color: inherit; text-decoration: none;">
+					<h2>Building</h2>
+				</a>
+				<p>Please make sure you have installed the global dependencies:</p>
+				<ul>
+					<li>Python v2.7 is recommended, although Python v3.5, v3.6, or v3.7 may work.</li>
+					<li>npm i -g node-pre-gyp</li>
+				</ul>
 				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 					<h2>Install</h2>
 				</a>
@@ -83,27 +91,38 @@
 <span class="hljs-keyword">const</span> { Bot } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mousebot'</span>);
 
 <span class="hljs-comment">/**
- * Create an instance of the class.
+ * Create an instance of the class. 
+ * Each member function of the class is an async function that returns a promise.
  */</span>
 
 <span class="hljs-keyword">let</span> bot = <span class="hljs-keyword">new</span> Bot();
 
 <span class="hljs-comment">//Move the mouse to the coordinates x=400, y=500. </span>
-bot.mouseMove(<span class="hljs-number">400</span>, <span class="hljs-number">500</span>);
+bot.mouse.move(<span class="hljs-number">400</span>, <span class="hljs-number">500</span>);
 
 <span class="hljs-comment">//Move the mouse from x=300, y=400 to x=600, y=500 smoothly.</span>
-bot.mouseMoveSmooth(<span class="hljs-number">300</span>, <span class="hljs-number">300</span>, <span class="hljs-number">600</span>, <span class="hljs-number">500</span>);
+bot.mouse.moveSmooth(<span class="hljs-number">300</span>, <span class="hljs-number">300</span>, <span class="hljs-number">600</span>, <span class="hljs-number">500</span>);
 
 <span class="hljs-comment">//Type "Hello World!"</span>
- bot.keyWrite(<span class="hljs-string">"Hello world!"</span>)
+bot.keyboard.write(<span class="hljs-string">"Hello world!"</span>)
 
 <span class="hljs-comment">//Chain the alt and f5 keys to perform an ALT+F5 to refresh a page.</span>
-bot.keyChain(<span class="hljs-string">"alt"</span>, <span class="hljs-string">"f5"</span>);
+bot.keyboard.keyChain(<span class="hljs-string">"alt"</span>, <span class="hljs-string">"f5"</span>);
 
 <span class="hljs-comment">//Directly use some implemented shortcuts.</span>
 bot.shortcuts.altTab();
 
+<span class="hljs-comment">//Chain functions using an async function.</span>
+<span class="hljs-keyword">let</span> chain = <span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> bot.mouse.moveSmooth(<span class="hljs-number">300</span>, <span class="hljs-number">300</span>, <span class="hljs-number">600</span>, <span class="hljs-number">500</span>);
+    <span class="hljs-keyword">await</span> bot.keyboard.write(<span class="hljs-string">"Hello world!"</span>)
+}
+chain();
 </code></pre>
+				<a href="#known-issues" id="known-issues" style="color: inherit; text-decoration: none;">
+					<h2>Known Issues</h2>
+				</a>
+				<p>Currently all of the features work on Windows and Linux. On MacOS some mouse features work while most keyboard features do not work.</p>
 				<a href="#author" id="author" style="color: inherit; text-decoration: none;">
 					<h2>Author</h2>
 				</a>
