@@ -1,6 +1,6 @@
 {
   "name": "mousebot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A computer automating package that can control the mouse and keyboard.",
   "main": "lib/index.js",
   "author": "iberatkaya",
@@ -27,8 +27,11 @@
     "Keyboard",
     "Bot",
     "Control",
-    "Control Mouse",
-    "Control Keyboard"
+    "Desktop",
+    "Screen",
+    "GUI",
+    "Move",
+    "Write"
   ],
   "scripts": {
     "build": "tsc",
