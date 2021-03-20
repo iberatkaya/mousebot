@@ -150,6 +150,7 @@ fn key_down(mut cx: FunctionContext) -> JsResult<JsUndefined> {
         "leftarrow" => con.key_down(Key::LeftArrow),
         "uparrow" => con.key_down(Key::UpArrow),
         "downarrow" => con.key_down(Key::DownArrow),
+        "meta" => con.key_down(Key::Meta),
         "esc" => con.key_down(Key::Escape),
         "return" => con.key_down(Key::Return),
         _ => panic!("{} is not a valid key!", mystr)
@@ -177,6 +178,7 @@ fn key_up(mut cx: FunctionContext) -> JsResult<JsUndefined> {
                 "leftarrow" => con.key_up(Key::LeftArrow),
                 "uparrow" => con.key_up(Key::UpArrow),
                 "downarrow" => con.key_up(Key::DownArrow),
+                "meta" => con.key_down(Key::Meta),
                 "esc" => con.key_up(Key::Escape),
                 "return" => con.key_up(Key::Return),
         _ => panic!("{} is not a valid key!", mystr)
@@ -204,6 +206,7 @@ fn key_click(mut cx: FunctionContext) -> JsResult<JsUndefined> {
         "leftarrow" => con.key_click(Key::LeftArrow),
         "uparrow" => con.key_click(Key::UpArrow),
         "downarrow" => con.key_click(Key::DownArrow),
+        "meta" => con.key_down(Key::Meta),
         "esc" => con.key_click(Key::Escape),
         "return" => con.key_click(Key::Return),
         _ => panic!("{} is not a valid key!", mystr)

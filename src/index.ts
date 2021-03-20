@@ -1,7 +1,7 @@
 //@ts-ignore
 import * as addon from "../native";
 
-type Key = "alt" | "shift" | "backspace" | "capslock" | "space" | "escape" | "tab" | "f4" | "f5" | "rightarrow" | "leftarrow" | "uparrow" | "downarrow" | "esc" | "return";
+type Key = "alt" | "shift" | "backspace" | "capslock" | "space" | "escape" | "tab" | "f4" | "f5" | "rightarrow" | "leftarrow" | "uparrow" | "downarrow" | "esc" | "return" | "meta";
 
 export class Bot {
     /**
@@ -18,6 +18,7 @@ export class Bot {
         TAB: "tab" as Key,
         F4: "f4" as Key,
         F5: "f5" as Key,
+        meta: "meta" as Key,
         ARROW: {
             RIGHT: "rightarrow" as Key,
             LEFT: "leftarrow" as Key,
@@ -207,6 +208,13 @@ export class Bot {
          */
 
         altTab: async (delay = 200) => await this.keyboard.keyChain(Bot.keys.ALT, Bot.keys.TAB, delay),
+
+        /**
+         * @param {number} [delay = 200] The delay of the tab key being pressed
+         * Perform Command/Windows+TAB by pressing the tab button after the delay has occurred. The delay is required since the buttons are not pressed instantaneously. The delay might be required to higher for different machines.
+         */
+
+        metaTab: async (delay = 200) => await this.keyboard.keyChain(Bot.keys.meta, Bot.keys.TAB, delay),
 
         /**
          * @param {number} [delay = 200] The delay of the f4 key being pressed
