@@ -1,6 +1,6 @@
 {
     "name": "mousebot",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A computer automating package that can control the mouse and keyboard.",
     "main": "lib/index.js",
     "author": "iberatkaya",
