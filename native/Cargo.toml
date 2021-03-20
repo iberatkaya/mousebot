@@ -15,4 +15,4 @@ neon-build = "0.3.3"
 
 [dependencies]
 neon = "0.3.3"
-enigo = "0.0.13"
+enigo = "0.0.14"
