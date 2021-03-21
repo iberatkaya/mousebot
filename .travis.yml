@@ -17,7 +17,7 @@ before_install:
     - sh /tmp/rustup.sh -y
     - |
         if [ $TRAVIS_OS_NAME == 'linux' ]; then
-            apt install libxdo-dev;
+            sudo apt install libxdo-dev;
         fi
     - export PATH="$HOME/.cargo/bin:$PATH"
     - |
